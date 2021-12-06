@@ -50,7 +50,7 @@ def callback():
 ##### 基本上程式編輯都在這個function #####
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage("你好可愛")
+    message = TextSendMessage("這是學校網址https://www.ntut.edu.tw/")
     line_bot_api.reply_message(event.reply_token,message)
 
 #主程式
