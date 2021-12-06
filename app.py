@@ -53,7 +53,7 @@ def handle_message(event):
     message123 = event.message.text
     if re.match("學校網址"，message123):
     message456 = TextSendMessage("這是學校網址https://www.ntut.edu.tw/")
-    line_bot_api.reply_message(event.reply_token,message)
+    line_bot_api.reply_message(event.reply_token,message456)
 
 #主程式
 import os
