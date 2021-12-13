@@ -56,7 +56,7 @@ def handle_message(event):
 		#text_message = TextSendMessage(text="官方網站 : https://cruelshare.com/")
         	#line_bot_api.reply_message(event.reply_token, text_message)
 	#else:
-		#line_bot_api.reply_message(event.reply_token, TextSendMessage(message))
+	line_bot_api.reply_message(event.reply_token, TextSendMessage(message))
 	
 #主程式
 import os
