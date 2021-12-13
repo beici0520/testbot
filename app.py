@@ -51,10 +51,10 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 	message = text =event.message.text
-	if re.match('問卷',message):
+	if re.match("網址",message):
 		#message = TextSendMessage(text=event.message.text)
-		text_message = TextSendMessage(text="官方網站 : https://cruelshare.com/")
-        line_bot_api.reply_message(event.reply_token, text_message)
+		text_message = TextSendMessage(text="學校網址 : https://www.ntut.edu.tw/")
+       	 	line_bot_api.reply_message(event.reply_token, text_message)
 	
 
 
