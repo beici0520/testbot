@@ -50,11 +50,11 @@ def callback():
 ##### 基本上程式編輯都在這個function #####
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-	message = text =event.message.text
-	if re.match('學校網站',message):
+	message123 = text =event.message.text
+	if re.match('學校網站',message123):
 		#message = TextSendMessage(text=event.message.text)
-		text_message = TextSendMessage(text="學校網站 :https://www.ntut.edu.tw/")
-        line_bot_api.reply_message(event.reply_token, text_message)
+		text_message456 = TextSendMessage(text="學校網站 :https://www.ntut.edu.tw/")
+        line_bot_api.reply_message(event.reply_token, text_message456)
 	
 
 
