@@ -46,14 +46,14 @@ def callback():
 
     return 'OK'
 
-##訊息傳遞區塊
+#訊息傳遞區塊
 ##### 基本上程式編輯都在這個function #####
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-	message123 = event.message.text
-    	if re.match("網址",message123):
-        	text_message456 = TextSendMessage("這是學校網址https://www.ntut.edu.tw/")
-        	line_bot_api.reply_message(event.reply_token, text_message456 )
+    message123 = event.message.text
+    if re.match("網址",message123):
+        text_message456 = TextSendMessage("這是學校網址https://www.ntut.edu.tw/")
+        line_bot_api.reply_message(event.reply_token, text_message456 )
 	
 #主程式
 import os
